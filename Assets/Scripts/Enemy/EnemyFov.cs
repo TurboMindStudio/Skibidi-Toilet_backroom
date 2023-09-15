@@ -31,6 +31,7 @@ public class EnemyFov : MonoBehaviour
                         Debug.Log("Player in FOV!");
                         playerInFov = true;
 
+
                     }
                     
 
