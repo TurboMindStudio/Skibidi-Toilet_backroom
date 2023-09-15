@@ -27,7 +27,7 @@ public class EnemyPatrol : MonoBehaviour
     {
      
         float distanceBeetweenPoints = Vector3.Distance(transform.position, patrolPoint[randomPos].position);
-        Debug.Log(distanceBeetweenPoints);
+        //Debug.Log(distanceBeetweenPoints);
         if (distanceBeetweenPoints <= 5)
         {
             randomPos = Random.Range(0, patrolPoint.Length);

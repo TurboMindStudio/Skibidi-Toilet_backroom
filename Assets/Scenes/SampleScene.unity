@@ -8,8 +8,9 @@ OcclusionCullingSettings:
     smallestOccluder: 5
     smallestHole: 0.25
     backfaceThreshold: 100
-  m_SceneGUID: 00000000000000000000000000000000
-  m_OcclusionCullingData: {fileID: 0}
+  m_SceneGUID: 99c9720ab356a0642a771bea13969a05
+  m_OcclusionCullingData: {fileID: 36300000, guid: 178e7ecde8cf14146a265571424bacda,
+    type: 2}
 --- !u!104 &2
 RenderSettings:
   m_ObjectHideFlags: 0
@@ -123,7 +124,7 @@ NavMeshSettings:
     preserveTilesOutsideBounds: 0
     debug:
       m_Flags: 0
-  m_NavMeshData: {fileID: 23800000, guid: b03a22060eedb3a4caaae69cdb6cbe8e, type: 2}
+  m_NavMeshData: {fileID: 0}
 --- !u!1 &7703692
 GameObject:
   m_ObjectHideFlags: 0
@@ -2029,6 +2030,10 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 1062619882}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: c3c61fc6bc977d243a799108ff0560a3,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1062619883}
   m_SourcePrefab: {fileID: 100100000, guid: c3c61fc6bc977d243a799108ff0560a3, type: 3}
 --- !u!1 &1062619875 stripped
 GameObject:
@@ -2214,6 +2219,21 @@ CharacterController:
   m_SkinWidth: 0.08
   m_MinMoveDistance: 0.001
   m_Center: {x: 0, y: 38.6, z: 0}
+--- !u!114 &1062619883
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1062619875}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aed4a674586874c478130c32864ce6d0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 1730418217}
+  viewRadius: 40
+  viewAngle: 90
 --- !u!1 &1065100935
 GameObject:
   m_ObjectHideFlags: 0
@@ -61707,9 +61727,10 @@ GameObject:
   - component: {fileID: 1730418216}
   - component: {fileID: 1730418219}
   - component: {fileID: 1730418218}
+  - component: {fileID: 1730418220}
   m_Layer: 0
   m_Name: FpsController
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -61789,6 +61810,29 @@ MonoBehaviour:
   cam: {fileID: 36471508}
   canMove: 1
   cinemachineVirtualCamera: {fileID: 36471507}
+--- !u!136 &1730418220
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1730418215}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.5
+  m_Height: 4.2521653
+  m_Direction: 1
+  m_Center: {x: 0, y: -0.107472815, z: 0}
 --- !u!4 &1860432442 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8341336181485515358, guid: c3c61fc6bc977d243a799108ff0560a3,
